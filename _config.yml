@@ -1,0 +1,39 @@
+title: LS Blog
+subtitle: '技术博客'
+description: '技术博客 | 生活记录'
+keywords:
+author: ls
+language: zh-CN
+timezone: Asia/Shanghai
+
+url: https://aitechflow.cn
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+
+theme: hexo-theme-butterfly
+
+deploy:
+  type: ''
+
+search:
+  path: search.xml
+  field: post
+  content: true
