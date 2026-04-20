@@ -27,7 +27,7 @@ jobs:
           git clone --depth 1 https://github.com/jerryc127/hexo-theme-butterfly.git themes/hexo-theme-butterfly
       
       - name: Generate Site
-        run: npm run build
+        run: npx hexo clean && npx hexo g
       
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
