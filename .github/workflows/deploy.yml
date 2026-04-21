@@ -21,10 +21,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
       
-      - name: Install Theme
-        run: |
-          rm -rf themes/hexo-theme-butterfly
-          git clone --depth 1 https://github.com/jerryc127/hexo-theme-butterfly.git themes/hexo-theme-butterfly
+      - name: Setup Theme
+        run: ls themes/hexo-theme-butterfly
+        # Theme is already included in the repo, no need to clone
       
       - name: Generate Site
         run: npx hexo clean && npx hexo g
